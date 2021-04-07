@@ -1,17 +1,25 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
+    "module": "ESNext",
+    "declaration": true,
+    "noImplicitAny": false,
+    "removeComments": true,
     "moduleResolution": "node",
-    "strict": true,
+    "esModuleInterop": true,
     "jsx": "preserve",
-    "baseUrl": ".",
     "allowJs": true,
+    "baseUrl": ".",
+    "noLib": false,
+    "target": "es6",
     "sourceMap": true,
     "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "lib": ["esnext", "dom"],
-    "types": ["vite/client"]
+    "lib": [
+      "ESNext", "DOM"
+    ],
+    "allowSyntheticDefaultImports": true
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
-}
+  "exclude": [
+    "node_modules"
+  ]
+ }
+ 

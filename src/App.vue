@@ -1,23 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
+  <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
 </template>
 
 <script lang="ts">
-  import { defineComponent, onMounted, reactive, toRefs } from 'vue';
-  import HelloWorld from './components/HelloWorld.vue';
+import { defineComponent, onMounted, reactive, toRefs } from 'vue'
+import HelloWorld from './components/HelloWorld.vue'
 
-  export default defineComponent({
-    name: 'App',
-    components: {
-      HelloWorld,
-    },
-    setup(props, ctx) {
-      const state = reactive({
-        name: 'twy',
-      });
-    },
-  });
+export default defineComponent({
+  name: 'App',
+  components: {
+    HelloWorld,
+  },
+  setup(props, ctx) {
+    const state = reactive({
+      name: 'twy',
+    })
+  },
+})
 </script>
 
 <style>
