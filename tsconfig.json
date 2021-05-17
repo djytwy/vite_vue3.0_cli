@@ -16,7 +16,11 @@
     "lib": [
       "ESNext", "DOM"
     ],
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "typeRoots": ["./typings/", "./node_modules/@types/"]
   },
   "exclude": [
     "node_modules"
